@@ -2,22 +2,29 @@ import React from "react";
 import './App.css';
 import Webcam from "react-webcam";
 import * as cocoSsd from "@tensorflow-models/coco-ssd";
-import Speech from "react-speech"
+import Speech from "react-speech";
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+
 
 function App() {
   const constraints = { video: true };
   const webcamRef = React.useRef(null);
   const [objectLabel, setObjectLabel] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const { transcript, resetTranscript, browserSupportsSpeechRecognition } = useSpeechRecognition();
 
   const handleInputChange = (event) => {
-    setMessage(event.target.value);
+    setMessage(event.target.value || transcript);
   };
 
   const handleSpeechConversion = () => {
     const speech = new SpeechSynthesisUtterance();
     speech.text = message;
     window.speechSynthesis.speak(speech);
+  };
+
+  const handleSpeechRecognition = () => {
+    SpeechRecognition.startListening();
   };
 
   React.useEffect(() => {
@@ -66,12 +73,20 @@ function App() {
       });
   }, []);
 
+  if (!browserSupportsSpeechRecognition) {
+    return <span>Browser doesn't support speech recognition.</span>;
+  }
+
   return (
     <div className="App">
       <Webcam ref={webcamRef} />
       <p>Object: {objectLabel}</p>
       <input type="text" value={message} onChange={handleInputChange} />
       <button onClick={handleSpeechConversion}>Convert to Speech</button>
+      <button onClick={SpeechRecognition.startListening}>Start</button>
+      <button onClick={SpeechRecognition.stopListening}>Stop</button>
+      <button onClick={resetTranscript}>Reset</button>
+      <p>{transcript}</p>
       <Speech text={message} />
     </div>
   );
