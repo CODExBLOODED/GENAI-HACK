@@ -5,7 +5,12 @@
 
 <p align="center"><b>Team Name:</b> CODE BLOODED</p>
 
-<p align="center"><b>Team Members:</b> Avaninder Bath | Julia Da Silva | Daniel DeBrun | Luana Madeira</p>
+<p align="center"><b>Team Members:</b>
+  Avaninder Bath - https://www.linkedin.com/in/avaninderbath/
+  Julia Da Silva - https://www.linkedin.com/in/juliapereiradasilva/
+  Daniel DeBrun - https://www.linkedin.com/in/danieldebrun/
+  Luana Madeira - https://www.linkedin.com/in/luanamadeira/
+</p>
 
 ## How To Start The Application
 - For demonstration purposes, install NPM, Google CLI (for the API key to work), Python 3.9.0, and PIP 24.0.
