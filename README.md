@@ -1,4 +1,4 @@
-# <p align="center">VisionAI GenAI - Genesis 2024 Project</p>
+# <p align="center">VisionAI - GenAI Genesis 2024 Project</p>
 <p align="center">Empowering Visual Independence with Artificial Intelligence. VisionAI is a camera application that identifies everyday objects and recognizes preset hand gestures for various command executions.</p>
 
 <p align="center"><img src="ProjectLogo.png"></p>
