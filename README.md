@@ -3,9 +3,9 @@
 
 <p align="center"><img src="ProjectLogo.png"></p>
 
-<p align="center">Team Name: CODE BLOODED</p>
+<p align="center"><b>Team Name:</b> CODE BLOODED</p>
 
-<p align="center">Team Members: Avaninder Bath | Julia Da Silva | Daniel DeBrun | Luana Madeira</p>
+<p align="center"><b>Team Members:</b> Avaninder Bath | Julia Da Silva | Daniel DeBrun | Luana Madeira</p>
 
 ## How To Start The Application
 - For demonstration purposes, install NPM, Google CLI (for the API key to work), Python 3.9.0, and PIP 24.0.
