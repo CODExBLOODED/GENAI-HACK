@@ -3,12 +3,12 @@
 
 <p align="center"><img src="ProjectLogo.png"></p>
 
-<p align="center"><b>Team Name:</b> CODE BLOODED</p>
+<p align="center"><b>Team Name:</b><br>CODE BLOODED</p>
 
-<p align="center"><b>Team Members:</b>
-  Avaninder Bath - https://www.linkedin.com/in/avaninderbath/
-  Julia Da Silva - https://www.linkedin.com/in/juliapereiradasilva/
-  Daniel DeBrun - https://www.linkedin.com/in/danieldebrun/
+<p align="center"> <b>Team Members:</b> <br>
+  Avaninder Bath - https://www.linkedin.com/in/avaninderbath/ <br>
+  Julia Da Silva - https://www.linkedin.com/in/juliapereiradasilva/ <br>
+  Daniel DeBrun - https://www.linkedin.com/in/danieldebrun/ <br>
   Luana Madeira - https://www.linkedin.com/in/luanamadeira/
 </p>
 
