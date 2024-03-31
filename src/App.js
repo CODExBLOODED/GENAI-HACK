@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from "axios";
 import './App.css';
 import Webcam from "react-webcam";
 import * as cocoSsd from "@tensorflow-models/coco-ssd";
@@ -12,6 +13,19 @@ function App() {
   const [objectLabel, setObjectLabel] = React.useState("");
   const [message, setMessage] = React.useState("");
   const { transcript, resetTranscript, browserSupportsSpeechRecognition } = useSpeechRecognition();
+
+  useEffect(() => {
+    axios.get('http://127.0.0.1:5000/api/data')
+      .then(response => {
+        console.log(response.data);
+        console.log("Connected to the server and connected with the flask application")
+        // Here you can set your state variables with the data received
+      })
+      .catch(error => {
+        console.error('Error fetching data', error);
+      });
+  }, []);  // Empty array means this effect runs once on mount
+
 
   const handleInputChange = (event) => {
     setMessage(event.target.value || transcript);
